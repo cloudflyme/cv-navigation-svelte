@@ -183,6 +183,11 @@ const archive = [
     text: 'ES6',
     url: 'https://es6.ruanyifeng.com/#docs/style',
     title: '阮一峰编写的ES6代码规范'
+  },
+  {
+    src: 'https://any86.github.io/any-rule/favicon.ico',
+    text: '正则大全',
+    url: 'https://any86.github.io/any-rule/'
   }
 ]
 

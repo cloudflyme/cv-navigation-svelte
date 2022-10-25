@@ -349,7 +349,7 @@
       height="280"
       src="/assets/watch.html"
       frameborder="0"
-      style="background-color: rgb(255, 255, 255);"
+      style="background-color: var(--color-box);"
     />
   {/if}
 
@@ -425,7 +425,8 @@
     position: absolute;
     top: 40px;
     width: 100%;
-    background-color: #fff;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-box);
   }
   .settings-item {
     padding: 5px;
@@ -435,11 +436,11 @@
     margin-bottom: 5px;
   }
   .settings-item:hover {
-    background-color: #eee;
+    color: #1890ff;
   }
   .translate {
     width: 350px;
-    background-color: #fff;
+    background-color: var(--color-box);
     padding: 10px;
     margin-bottom: 20px;
   }
@@ -466,7 +467,7 @@
     width: 350px;
     padding: 0 5px;
     height: 40px;
-    background-color: #fff;
+    background-color: var(--color-box);
   }
   aside {
     margin-left: 20px;

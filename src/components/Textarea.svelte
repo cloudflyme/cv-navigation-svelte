@@ -37,7 +37,7 @@
     focusable="false"
     width="12px"
     height="12px"
-    fill="#00000040"
+    fill="var(--color-text)"
     aria-hidden="true"
     viewBox="64 64 896 896"
   >
@@ -55,7 +55,9 @@
     position: relative;
     textarea {
       outline: none;
-      border: 1px solid #d9d9d9;
+      color: var(--color-text);
+      background-color: var(--color-box);
+      border: 1px solid var(--color-border);
       padding: 4px 11px;
       width: 100%;
       max-width: 100%;

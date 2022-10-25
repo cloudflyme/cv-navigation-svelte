@@ -56,7 +56,6 @@ export function throttle(fn, delay = 1000) {
 /**
  * Parse the time to string
  * @param {(Object|string|number)} time
- * @param {string} cFormat
  * @returns {string | null}
  */
 export function parseTime(time, cFormat) {

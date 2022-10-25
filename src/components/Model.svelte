@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
+  import { createEventDispatcher, onMount } from 'svelte'
   const dispatch = createEventDispatcher()
   export let width = 520
   export let title = '标题'
@@ -25,11 +25,26 @@
     }
     return true
   }
+  function handleClick(e) {
+    Array.from(e.target.classList).find(item => item === 'mask') &&
+      handleCancel()
+  }
+  function fn(e) {
+    if (e.key === 'Escape') {
+      handleCancel()
+    }
+  }
+  
+  $: if (visible) {
+    window.addEventListener('keyup',fn)
+	} else {
+    window.removeEventListener('keyup', fn)
+  }
 </script>
 
 {#if get() && visible}
   <div class="my-model">
-    <div class="mask">
+    <div class="mask" on:click={handleClick} >
       <div class="my-model-mian" style="width: {width}px;">
         <div class="model-header">
           <span>{title}</span>
@@ -71,10 +86,8 @@
       align-items: center;
       justify-content: space-between;
       padding: 16px 24px;
-      color: rgba(0, 0, 0, 0.65);
-      border-bottom: 1px solid #e8e8e8;
+      border-bottom: 1px solid var(--color-border);
       span {
-        color: rgba(0, 0, 0, 0.85);
         font-weight: 500;
         font-size: 16px;
       }
@@ -93,7 +106,7 @@
       text-align: right;
       display: flex;
       justify-content: flex-end;
-      border-top: 1px solid #e8e8e8;
+      border-top: 1px solid var(--color-border);
     }
   }
   .mask {
@@ -106,20 +119,23 @@
   }
   .my-model-mian {
     border-radius: 4px;
-    background: #fff;
+    border: 1px solid var(--color-border);
+    background: var(--color-box);
     transition: all 0.05s ease-in;
     position: relative;
     top: 100px;
     margin: 0 auto;
-    border: 0;
     box-shadow: 0 4px 12px #00000026;
     pointer-events: auto;
   }
 
   .disable {
-    color: #fff;
+    color: var(--color-text);
     background-color: #40a9ff;
     border-color: #40a9ff;
     cursor: not-allowed;
+  }
+  .my-model {
+    color: var(--color-text);
   }
 </style>

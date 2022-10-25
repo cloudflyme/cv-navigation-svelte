@@ -51,5 +51,10 @@ export default [
     text: 'Project Manager',
     url: 'https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager',
     title: '多个项目切换'
+  },
+  {
+    src: 'https://zignd.gallerycdn.vsassets.io/extensions/zignd/html-css-class-completion/1.20.0/1608419199966/Microsoft.VisualStudio.Services.Icons.Default',
+    text: 'IntelliSense for CSS class names in HTML',
+    url: 'https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion'
   }
 ]

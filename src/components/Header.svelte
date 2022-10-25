@@ -203,7 +203,7 @@
         focusable="false"
         width="12px"
         height="12px"
-        fill="#00000040"
+        fill="var(--color-text)"
         aria-hidden="true"
         viewBox="64 64 896 896"
       >
@@ -218,10 +218,10 @@
 <style lang="less">
   .search {
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.07);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     padding: 0 10px;
-    background-color: #fff;
+    background-color: var(--color-header);
     width: 700px;
     height: 44px;
     display: flex;
@@ -239,17 +239,18 @@
     padding: 10px;
     transform-origin: center top;
     box-shadow: 0 2px 8px #00000026;
-    background: #fafafa;
     border-radius: 2px;
     transform: scale(0);
     transition: transform 0.3s;
     position: absolute;
     top: 44px;
     left: -100%;
-    background-color: #fff;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-box);
   }
 
   input {
+    color: var(--color-text);
     width: 100%;
     line-height: 44px;
     padding: 0 22px 0 5px;
@@ -290,7 +291,8 @@
     top: 50px;
     left: 39px;
     width: calc(100% - 50px);
-    background: #fff;
+    border: 1px solid var(--color-border);
+    background: var(--color-box);
     border-radius: 2px;
     box-shadow: 0 2px 8px #00000026;
   }
@@ -298,7 +300,7 @@
     padding: 5px 12px;
   }
   .search-item:hover {
-    background-color: #eee;
+    color: #1890ff;
   }
   .search-item:first-child {
     margin-top: 5px;
@@ -307,7 +309,6 @@
     margin-bottom: 5px;
   }
   .search-item-active {
-    background-color: #e6f7ff;
     color: #1890ff;
   }
   header {
@@ -319,6 +320,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: 0% 0% / cover rgb(255, 255, 255);
+    border: 1px solid var(--color-border);
+    backdrop-filter: saturate(50%) blur(8px);
+    background: var(--color-header);
   }
 </style>

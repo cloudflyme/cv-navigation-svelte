@@ -1,5 +1,6 @@
 // @ts-ignore
 import App from './App.svelte'
+import './style/dark.css'
 import './style/index.less'
 import './assets/icon/iconfont.css'
 

@@ -1,0 +1,16 @@
+:root {
+  --color-body: #f5f5f5;
+  --color-box: #fff;
+  --color-header: rgba(255,255,255,0.7);
+  --color-text: #000000d9;
+  --color-border: rgba(0, 0, 0, 0.07);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: #1a1a1a;
+    --color-box: #242424;
+    --color-header: rgba(26,26,26,.7);
+    --color-text: #ffffffde;
+    --color-border: rgba(84, 84, 84, 0.48);
+  }
+}

@@ -1,12 +1,12 @@
 body {
   position: relative;
   margin: 0;
-  background-color: #f5f5f5;
-  color: #000000d9;
+  background-color: var(--color-body);
+  color: var(--color-text);
   font-size: 14px;
 }
 .remove:hover {
-  fill: #00000073;
+  fill: #1890ff;
 }
 div,
 span,
@@ -17,7 +17,7 @@ input {
 }
 a {
   text-decoration: none;
-  color: #000000d9;
+  color: var(--color-text); 
 }
 
 a:hover {
@@ -34,7 +34,7 @@ h3 {
 }
 
 .iconfont:hover {
-  color: #ccc;
+  color: #1890ff;
 }
 
 .b--r {
@@ -48,7 +48,7 @@ h3 {
 }
 
 .bc-white {
-  background-color: #fff;
+  background-color: var(--color-box);
 }
 
 .p-10 {
@@ -61,7 +61,7 @@ h3 {
 .f-s-15 {
   padding-bottom: 5px;
   margin-bottom: 5px;
-  border-bottom: 0.5px solid #f5f5f5;
+  border-bottom: 0.5px solid var(--color-border);
   font-size: 15px;
   font-weight: 600;
 }
@@ -81,13 +81,13 @@ h3 {
   padding: 0 15px;
 }
 .my-cancel {
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--color-text);
   border: 1px solid #d9d9d9;
 }
 
 .my-cancel:hover {
   color: #40a9ff;
-  background-color: #fff;
+  background-color: var(--color-box);
   border-color: #40a9ff;
 }
 

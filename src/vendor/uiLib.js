@@ -86,5 +86,10 @@ export default [
     text: 'Semi Design',
     url: 'https://semi.design/zh-CN/',
     title: '由抖音前端与 UED 团队维护，易于定制的现代化设计系统，帮助设计师与开发者打造高质量产品。'
+  },
+  {
+    src: 'https://file.iviewui.com/file/favicon.ico',
+    text: 'iView',
+    url: 'http://iview.talkingdata.com/#/components/guide/install'
   }
 ]

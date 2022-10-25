@@ -111,9 +111,9 @@
       border-radius: 4px;
     }
   }
-  .hot-list a {
-    color: #2440b3 !important;
-  }
+  // .hot-list a {
+  //   color: #2440b3 !important;
+  // }
   .rl-item-text {
     width: 77%;
   }

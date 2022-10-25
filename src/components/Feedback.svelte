@@ -44,8 +44,9 @@
     modelShow = true
   }}
 >
+  <span class="text">留言反馈</span>
   <img
-    src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/2a66e021-0a42-4b30-82ff-4394644605cd.png"
+    src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/6b91e726-c7f8-40b7-9736-c51304a44926.png"
     alt=""
   />
 </div>
@@ -62,6 +63,7 @@
     <div class="modal-type">
       <span>类型：</span>
       <select bind:value={listValue} on:change={selectValue}>
+        <option disabled value="">请选择一项</option>
         <option value="建议">建议</option>
         <option value="添加网站">添加网站</option>
       </select>
@@ -80,20 +82,34 @@
 </Model>
 
 <style lang="less">
+  option {
+    background-color: var(--color-box);
+  }
+  select:focus {
+    outline: 1px solid #1890ff;
+  }
   select {
     outline: none;
     width: 163px;
     height: 32px;
-    border: 1px solid rgba(60, 60, 60, 0.29);
+    border: 1px solid var(--color-border);
+    font-size: 100%;
     border-radius: 4px;
     padding: 0.2em 0.6em;
     background: transparent;
     line-height: inherit;
-    color: inherit;
+    color: var(--color-text);
+  }
+  .text {
+    position: absolute;
+    top: 10px;
+    font-size: 17px;
   }
   .feedback {
+    position: relative;
+    padding-top: 40px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--color-box);
     display: flex;
     justify-content: center;
   }

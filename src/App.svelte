@@ -33,6 +33,7 @@
     localStorage.setItem('themeFlag', JSON.stringify(!themeFlag))
   }
 </script>
+
 <Header />
 {#if themeFlag}
   <main>
@@ -46,7 +47,7 @@
     <div>
       <a
         class="link"
-        href="https://github.com/cloudflyme/cv-navigation-nuxt"
+        href="https://github.com/cloudflyme/cv-navigation-svelte"
         target="_blank"
         rel="noopener noreferrer">源码链接，代码写的不好忽喷</a
       >
@@ -75,9 +76,9 @@
   title="帮助"
 />
 
-
 <style lang="less">
-  .help, .switch {
+  .help,
+  .switch {
     position: fixed;
     font-size: 22px;
     right: 50px;
@@ -107,8 +108,9 @@
     color: #909399;
     height: 80px;
     padding: 10px 0;
-    background-color: #fff;
-    
+    border: 1px solid var(--color-border);
+    background-color: var(--color-header);
+
     .block {
       display: block;
       width: 100%;

@@ -89,7 +89,7 @@
     left: 50%;
     width: 8px;
     height: 8px;
-    background-color: #fff;
+    background-color: var(--color-box);
     border: 2px solid #1890ff;
     border-radius: 8px;
     transform: translate(-50%);
@@ -113,7 +113,7 @@
     width: 2px;
     height: 100%;
     margin: 0 auto;
-    background-color: #f0f0f0;
+    background-color: var(--color-box);
     content: ' ';
   }
   .anchor-item {

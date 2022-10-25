@@ -115,7 +115,7 @@
           <a
             target="_blank"
             href={url}
-            class="item-link"
+            class="item-link text-overflow"
             {title}
             on:click={handleRecord.bind(this, text)}
           >
@@ -157,10 +157,10 @@
     line-height: 32px;
     z-index: 5;
     position: absolute;
-    border: 1px solid rgb(239, 239, 245);
+    border: 1px solid var(--color-border);
     box-shadow: 0 2px 4px 0px rgb(0 0 0 / 6%);
     top: 7px;
-    background-color: #fff;
+    background-color: var(--color-box);
     border-radius: 50px;
     text-align: center;
     cursor: pointer;
@@ -202,7 +202,7 @@
   .list {
     position: relative;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--color-box);
     line-height: 42px;
     margin-bottom: 20px;
   }
@@ -212,7 +212,7 @@
     padding-left: 46px;
     font-weight: 600;
     flex-shrink: 0;
-    border-bottom: 0.5px solid #f5f5f5;
+    border-bottom: 0.5px solid var(--color-border);
   }
 
   .list-item {
