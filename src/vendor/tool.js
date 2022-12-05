@@ -1,3 +1,4 @@
+import _cdn  from "./cdn"
 export default [
   {
     src: 'https://static.clewm.net/static/images/favicon.ico',
@@ -50,7 +51,7 @@ export default [
     url: 'https://tool.lu/'
   },
   {
-    src: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/49b9e324-ad76-4539-ba82-e10e1fbc4577.png',
+    src: _cdn + '49b9e324-ad76-4539-ba82-e10e1fbc4577.png',
     text: 'ikuuu-vpn',
     url: 'https://ikuuu.ltd/'
   },

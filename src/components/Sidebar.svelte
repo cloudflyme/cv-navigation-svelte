@@ -5,7 +5,7 @@
   import Tool from './Tool.svelte'
   import Hotlist from './Hotlist.svelte'
   import Switch from './Switch.svelte'
-  import { parseTime, ajaxGet, jsonp, simplifyNum } from '../utils'
+  import { parseTime, ajaxGet, jsonp, simplifyNum, ajaxPost } from '../utils'
   // import md5 from '../utils/md5'
   // @ts-ignore
   import md5 from 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/5cb15a85-8e80-4d4f-80b1-4a8bc5a9567b.js'
@@ -33,6 +33,9 @@
   let blvisible = localStorage.getItem('blvisible')
     ? JSON.parse(localStorage.getItem('blvisible'))
     : true
+  let mrvisible = localStorage.getItem('mrvisible')
+    ? JSON.parse(localStorage.getItem('mrvisible'))
+    : true
 
   let callbackText = ''
   let search = ''
@@ -40,7 +43,7 @@
   let weather = ''
   function getCityWeater(cid) {
     ajaxGet(
-      'https://restapi.amap.com/v3/weather/weatherInfo?key=8180aa2fdef7347cd0fdb6ed58afac53&city=' +
+      'https://restapi.amap.com/v3/weather/weatherInfo?key=1d94fb877fb22613daf44de96dd25a17&city=' +
         cid
     ).then(res => {
       if (res.infocode == 10000) {
@@ -58,20 +61,28 @@
   }
   let stopTime = null
   function getWeater() {
-    const script = document.createElement('script')
-    script.src = 'https://pv.sohu.com/cityjson?ie=utf-8'
-    document.body.appendChild(script)
-
-    script.onload = () => {
-      // @ts-ignore
-      const cid = returnCitySN.cid
+    ajaxPost('https://app.ipdatacloud.com/v1/ip_self_search').then(res => {
+      const cid = res.data.area_code
       getCityWeater(cid)
       stopTime = setInterval(() => {
         // @ts-ignore
         getCityWeater(cid)
       }, 1000 * 60 * 30)
-      document.body.removeChild(script)
-    }
+    })
+    // const script = document.createElement('script')
+    // script.src = 'https://pv.sohu.com/cityjson?ie=utf-8'
+    // document.body.appendChild(script)
+
+    // script.onload = () => {
+    //   // @ts-ignore
+    //   const cid = returnCitySN.cid
+    //   getCityWeater(cid)
+    //   stopTime = setInterval(() => {
+    //     // @ts-ignore
+    //     getCityWeater(cid)
+    //   }, 1000 * 60 * 30)
+    //   document.body.removeChild(script)
+    // }
   }
   onMount(() => {
     getWeater()
@@ -148,7 +159,6 @@
   if (wbvisible) {
     getwb()
   }
-  
 
   let zhihuList = []
   let loading3 = false
@@ -212,6 +222,13 @@
       getzhihu()
     }
   })
+  let str = ''
+  let str1 = ''
+  ajaxGet('https://v1.hitokoto.cn/').then(res => {
+    str = res.hitokoto
+    let temp = res.from_who ?? ''
+    str1 = '—— ' + temp + '「 ' + res.from + ' 」'
+  })
 </script>
 
 <aside>
@@ -219,6 +236,20 @@
     {weather} <span class="iconfont icon-shezhi-xianxing m-l-10" />
 
     <div class="settings-list">
+      <div class="settings-item">
+        <div>
+          <span class="iconfont icon-liuyan" />
+          <span>每日一言</span>
+        </div>
+
+        <Switch
+          visible={mrvisible}
+          on:change={e => {
+            localStorage.setItem('mrvisible', e.detail)
+            mrvisible = e.detail
+          }}
+        />
+      </div>
       <div class="settings-item">
         <div>
           <span class="iconfont icon-shizhong" />
@@ -340,6 +371,26 @@
       </div>
     </div>
   </div>
+  {#if mrvisible}
+    <div class="b--r m-b-20 article-box">
+      <div class="article">
+        {str}
+        <div style="text-align: right;">
+          {str1}
+        </div>
+      </div>
+
+      <iframe
+        title=""
+        class="cat"
+        width="350"
+        height="280"
+        src="/assets/cat.html"
+        frameborder="0"
+        style="background-color: var(--color-box);"
+      />
+    </div>
+  {/if}
 
   {#if szvisible}
     <iframe
@@ -380,7 +431,7 @@
 
   {#if bdvisible}
     <Hotlist
-      title="百度热搜"
+      title="<a href='https://top.baidu.com/board' target=_blank rel='noopener noreferrer' style='cursor: pointer'>百度热搜</a>"
       list={baiduList}
       loading={loading1}
       on:loading={getbaidu}
@@ -389,7 +440,7 @@
 
   {#if wbvisible}
     <Hotlist
-      title="微博热搜"
+      title="<a href='https://s.weibo.com/top/summary' target=_blank rel='noopener noreferrer' style='cursor: pointer'>微博热搜</a>"
       list={wbList}
       loading={loading2}
       on:loading={getwb}
@@ -415,6 +466,18 @@
 </aside>
 
 <style lang="less">
+  .article {
+    padding: 10px 10px 0;
+  }
+  .cat {
+    width: 330px;
+    height: 160px;
+  }
+  .article-box {
+    line-height: 28px;
+    padding: 10px 10px 0;
+    background-color: var(--color-box);
+  }
   .settings-list {
     transition: transform 0.3s;
     transform: scale(0);

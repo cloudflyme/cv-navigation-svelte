@@ -2,7 +2,7 @@ export default [
   {
     name: 'baidu',
     src: 'https://www.baidu.com/favicon.ico',
-    url: 'https://www.baidu.com/s?wd='
+    url: 'https://www.baidu.com/s?ie=utf-8&wd='
   },
   {
     name: 'bing',

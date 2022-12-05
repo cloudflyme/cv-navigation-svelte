@@ -1,5 +1,4 @@
-const _cdn =
-  'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/'
+import _cdn  from "./cdn"
 export default [
   {
     src: _cdn + '1a45b478-83a3-4f8d-b04e-d038d01b0b32.png',
@@ -108,5 +107,21 @@ export default [
     text: 'ESlint',
     url: 'https://eslint.org/',
     title: '查找并修复JavaScript代码中的问题'
+  },
+  {
+    src: 'http://mozilla.github.io/pdf.js/images/favicon.ico',
+    text: 'PDFjs',
+    url: 'http://mozilla.github.io/pdf.js/'
+  },
+  {
+    src: 'https://windicss.org/assets/logo.svg',
+    text: 'windicss',
+    url: 'https://windicss.org/'
+  },
+  {
+    src: 'https://bulma.zcopy.site/favicons/favicon-32x32.png?v=201701041855',
+    text: 'bulma',
+    url: 'https://bulma.zcopy.site/',
+    title: '现代化的CSS框架'
   }
 ]

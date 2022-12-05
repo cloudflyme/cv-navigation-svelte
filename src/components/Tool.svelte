@@ -10,6 +10,9 @@
     <a class="link bg0" href="https://www.bejson.com/" target="_blank"
       >Json格式转换</a
     >
+    <a class="link bg0" href="http://waifu2x.udp.jp/index.zh-CN.html" target="_blank"
+      >无损放大</a
+    >
     <a class="link bg0" href="https://tool.lu/html/" target="_blank"
       >Html格式转换</a
     >
@@ -32,16 +35,6 @@
       href="http://www.zuohaotu.com/cut-image.aspx"
       target="_blank">图片合并分割</a
     >
-    <a
-      class="link bg1"
-      href="https://www.onlinedo.cn/img-shuiyin"
-      target="_blank">图片加水印</a
-    >
-    <a
-      class="link bg1"
-      href="https://www.apowersoft.cn/image-watermark-remover"
-      target="_blank">图片去水印</a
-    >
     <a class="link bg1" href="https://convertio.co/zh/" target="_blank"
       >文件格式转换</a
     >
@@ -54,9 +47,6 @@
     >
     <a class="link bg1" href="https://tinypng.com/" target="_blank"
       >图片无损压缩</a
-    >
-    <a class="link bg2" href="https://www.uupoop.com/#/" target="_blank"
-      >在线PS软件</a
     >
     <a
       class="link bg2"
@@ -89,14 +79,8 @@
     <a class="link bg4" href="https://www.ilovepdf.com/zh-cn" target="_blank"
       >PDF全能工具</a
     >
-    <a class="link bg4" href="https://lightpdf.com/zh/" target="_blank"
-      >Light PDF</a
-    >
     <a class="link bg4" href="https://pdf2doc.com/zh/" target="_blank"
       >PDF2Word</a
-    >
-    <a class="link bg4" href="https://pdf.yozocloud.cn/p/home" target="_blank"
-      >永中PDF</a
     >
     <a class="link bg5" href="http://tool.liumingye.cn/video/" target="_blank"
       >VIP视频解析</a
@@ -110,6 +94,14 @@
     <a class="link bg5" href="https://tool.liumingye.cn/avbv/" target="_blank"
       >B站AV/BV互转</a
     >
+    <a class="link bg5" href="https://web.baimiaoapp.com/" target="_blank"
+      >图片文字提取（OCR）</a
+    >
+    <a class="link bg4" href="https://lab.5ime.cn/video/" target="_blank"
+      >短视频去水印解析</a
+    >
+
+    
   </div>
 </div>
 

@@ -91,5 +91,10 @@ export default [
     src: 'https://file.iviewui.com/file/favicon.ico',
     text: 'iView',
     url: 'http://iview.talkingdata.com/#/components/guide/install'
+  },
+  {
+    src: 'https://quark-design.hellobike.com/assets/favicon.7b83b3c2.ico',
+    text: 'Quark',
+    url: 'https://quark-design.hellobike.com/#/'
   }
 ]

@@ -1,6 +1,4 @@
-const _cdn =
-  'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/'
-
+import _cdn  from "./cdn"
 export default [
   {
     src: _cdn + '5e1ccfea-7b86-4631-a2a3-1c8eba715c20.png',

@@ -14,7 +14,7 @@
 
 <div class="hot-list b--r bc-white p-10 m-b-20">
   <div class="f-s-15">
-    {title} <img src={shuaxin} title="刷新" class="img {loading? 'hot-loading' : ''}" alt="" on:click={fn}>
+    {@html title} <img src={shuaxin} title="刷新" class="img {loading? 'hot-loading' : ''}" alt="" on:click={fn}>
   </div>
   {#each list as { url, text, hotNum }, i}
     <div class="list-item">

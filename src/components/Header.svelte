@@ -6,7 +6,7 @@
   import { getLocal, setLocal } from '../utils/local'
   let imgSrc = 'https://www.baidu.com/favicon.ico'
   let searchText = ''
-  let searchUrl = 'https://www.baidu.com/s?wd='
+  let searchUrl = 'https://www.baidu.com/s?ie=utf-8&wd='
 
   let clearShow = false
   let scaleShow = false
@@ -73,8 +73,6 @@
           searchIndex = -1
           searchList = res.g
           scaleShow = true
-        } else {
-          scaleShow = false
         }
       })
     }
@@ -145,7 +143,7 @@
       <div class="select-logo" on:click={selectLogo}>
         <img
           class="logo"
-          src="https://images.frontendjs.com/baidu-logo.png?imageView2/2/h/60"
+          src="https://www.baidu.com/img/flexible/logo/pc/result.png"
           alt="baidu"
         />
         <img
@@ -175,11 +173,10 @@
       <input
         bind:value={searchText}
         on:focus={() => {
-          searchText && (scaleShow = true)
+          searchText && (scaleShow = clearShow = true)
         }}
         bind:this={inputDom}
         on:input={handleInput}
-        data-url="https://www.baidu.com/s?wd="
         type="text"
         class="search-ipt"
       />

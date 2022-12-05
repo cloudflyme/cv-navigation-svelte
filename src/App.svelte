@@ -40,16 +40,39 @@
     <Section />
     {#if visible}
       <Sidebar />
-    {/if}
+  {/if}
   </main>
   <Anchor />
   <footer>
+    <div>
+      友情链接：
+      <a
+        class="link"
+        href="https://hitokoto.cn/"
+        target="_blank"
+        rel="noopener noreferrer">Hitokoto</a
+      >
+      、
+      <a
+        class="link"
+        href="https://tenapi.cn/"
+        target="_blank"
+        rel="noopener noreferrer">Ten▪Api</a
+      >
+      、
+      <a
+        class="link"
+        href="https://bing.ioliu.cn/"
+        target="_blank"
+        rel="noopener noreferrer">必应壁纸</a
+      >
+    </div>
     <div>
       <a
         class="link"
         href="https://github.com/cloudflyme/cv-navigation-svelte"
         target="_blank"
-        rel="noopener noreferrer">源码链接，代码写的不好忽喷</a
+        rel="noopener noreferrer">源码链接：代码写的不好，想了解的看看就行</a
       >
     </div>
     <div class="block">Copyright © 2021-2022 5cv.top All Rights Reserved</div>
@@ -100,13 +123,14 @@
     justify-content: center;
   }
   footer {
+    line-height: 25px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
     color: #909399;
-    height: 80px;
     padding: 10px 0;
     border: 1px solid var(--color-border);
     background-color: var(--color-header);
