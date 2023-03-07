@@ -1,8 +1,8 @@
 <script>
-  import { ajaxGet } from '../utils/index'
+  import { ajaxGet, ajaxPost } from '../utils/index'
   import { allData } from '../vendor'
   import { getOrder, objName } from '../vendor/orderData'
-  import { setLocal, getUploadData } from '../utils/local'
+  // import { setLocal, getUploadData } from '../utils/local'
   let visible = localStorage.getItem('foldFlag')
     ? JSON.parse(localStorage.getItem('foldFlag'))
     : false
@@ -28,12 +28,13 @@
     )
   }
   ajaxGet(
-    'https://39734fbc-b241-4d89-ad87-0befd655e266.bspapp.com/getHotList'
+    'https://fc-mp-b28966cb-26bc-43ae-b98b-aa286fad0729.next.bspapp.com/getHotList'
   ).then(res => {
     if (Array.isArray(res)) {
       hotList = query(res)
     }
   })
+
   let orderData = getOrder()
 
   window.addEventListener('setItem', function (e) {
@@ -45,20 +46,24 @@
   })
 
   function handleRecord(text) {
-    const item = { text }
-    const isNull = window.localStorage.getItem('record')
-    let data = []
-    if (isNull !== null) data = JSON.parse(isNull).value
-    const fData = data.find(v => v.text === item.text)
-    if (fData) {
-      fData.num++
-      setLocal('record', [...data])
-    } else {
-      item.num = 1
-      setLocal('record', [...data, item])
-    }
+    ajaxPost(
+      'https://fc-mp-b28966cb-26bc-43ae-b98b-aa286fad0729.next.bspapp.com/updateHotList',
+      [{ text, num: 1 }]
+    )
+    // console.log(item)
+    // const isNull = window.localStorage.getItem('record')
+    // let data = []
+    // if (isNull !== null) data = JSON.parse(isNull).value
+    // const fData = data.find(v => v.text === item.text)
+    // if (fData) {
+    //   fData.num++
+    //   setLocal('record', [...data])
+    // } else {
+    //   item.num = 1
+    //   setLocal('record', [...data, item])
+    // }
   }
-  getUploadData()
+  // getUploadData()
 
   function handleFold() {
     if (
@@ -73,8 +78,12 @@
     }
   }
   function lazyLoad(node) {
+    if (node.dataset.src.slice(0, 5) !== 'https') {
+      node.src = node.dataset.src
+      return
+    }
     const config = {
-      rootMargin: '200px 0px 0px 0px',
+      rootMargin: '300px 0px 0px 0px',
       threshold: 0
     }
     let observer = new IntersectionObserver((entries, self) => {
@@ -99,7 +108,13 @@
     <div class="title-icon" />
     <div class="hot-box">
       {#each hotList as { text, url, src, title }}
-        <a target="_blank" href={url} class="item-link" {title}>
+        <a
+          target="_blank"
+          href={url}
+          class="item-link"
+          {title}
+          on:click={handleRecord.bind(this, text)}
+        >
           <img data-src={src} use:lazyLoad alt="" />
           <span>{text}</span>
         </a>
@@ -196,7 +211,7 @@
     top: 0;
     width: 40px;
     height: 40px;
-    background: url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/273b3c5d-05d6-42ec-ad39-e32097e7ffe7.svg);
+    background: url(https://mp-b28966cb-26bc-43ae-b98b-aa286fad0729.cdn.bspapp.com/cloudstorage/1b0befee-bedd-4d2c-961f-de30fcac4bef.svg);
     background-size: cover;
   }
   .list {

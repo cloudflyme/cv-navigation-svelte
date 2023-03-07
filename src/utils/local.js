@@ -39,7 +39,7 @@ export function getUploadData() {
   if (getData) {
     const d = JSON.parse(getData)
     if (d.hasOwnProperty('expire') && nowTime() > d.expire) {
-      ajaxPost('https://39734fbc-b241-4d89-ad87-0befd655e266.bspapp.com/updateHotList', d.value).then(() => {
+      ajaxPost('https://fc-mp-b28966cb-26bc-43ae-b98b-aa286fad0729.next.bspapp.com/updateHotList', d.value).then(() => {
         localStorage.removeItem('record')
       })
     }

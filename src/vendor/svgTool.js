@@ -1,4 +1,3 @@
-import _cdn from './cdn'
 export default [
   {
     src: 'https://c.runoob.com/more/svgeditor/images/favicon.svg',
@@ -21,7 +20,7 @@ export default [
     url: 'https://www.shapedivider.app/'
   },
   {
-    src: _cdn + '7071a630-33c2-4ca0-bb77-9c7a7868a7a9.png',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAvVBMVEUAAAB9l+5+me4qV+nw9P8ZPuR/me9/mu5+me9+mO57lu5+me5+me5+me98l+52k+50kO5Ocuh+me/F0Pd9mO2Bm+99mPB7l+56lu50kO53ke1tjuzN1vsAEc5/mu5+mO68yfV9l+6wwfXO2fiQpu+YrvKTqfDI0vh+mu96le+nt/N6l+14l+54lO56le9zkuy2w/Zxkexpie3e5PrCzvhkf+7///9Sc++Qp//////U//8AAL9+me57l+54le2/NIBQAAAAPHRSTlMAw+APDAz99unUeuTYyINfPhvMxby0oZ2PXEYwGwf57dK8u7m5rpKQkIeBfnd1aVJRTDgwKiggHwwHBgRBaZZ6AAAAo0lEQVQY002ORRKEQBAEewx3h4V1d9eB/z9rA5ggyEtX5qkh/4DAuX6hhxtW5avne8moqrTTgSrbS8VMhBZxGTGqaAskQowdSlPpvpVFQBYwVCJ6rkgXjsqYk9swa4OpgcNV5f1UD42fdA3gYrk0x5vaE6nEdj2IarD6BsFqLY805uoea58yeDibYkk2CxBkE45839N/0PGIOJ5zAj3IDtnN+APgxQzTwvXUNwAAAABJRU5ErkJggg==',
     text: 'IRA Design',
     url: 'https://iradesign.io/gallery/illustrations'
   },

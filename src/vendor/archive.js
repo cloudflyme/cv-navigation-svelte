@@ -1,4 +1,3 @@
-import _cdn  from "./cdn"
 export default [
   {
     src: 'https://cn.vuejs.org/logo.svg',
@@ -61,7 +60,7 @@ export default [
     url: 'https://www.runoob.com/cssref/css-selectors.html'
   },
   {
-    src: _cdn + 'd01c693b-1ebb-4209-b13e-4ed5b13b3366.png',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAAAYdP8YdP8ZdP8Zdf8Zdf8QcP8Ydf8adf8ZdP8Zdf8gcP8ZdP8Zc/8Zdv8Yc/8Zdf+Y92gGAAAAEHRSTlMAoCDv35AQYM/PMBBvUN9AktiDrAAAALpJREFUOMuFk9sOhCAMRHuRgqK7/f+v3ZDoDmBC563p6YgwJcgyF3XXwtnoLUnqEMvUtuSTkg3jm7+0dSYH+j1xLOYHD/v3defzEgZh1PSc77oHAHhqtTwV0QtwQT0BsKio9JNmQI2yd+IZ8Ey8BpjKGiika0DJ14CHQPiJ8JDhb8YXVXUJWHttxCE34Nx1mBDAyGD33LAgSPrAUN1uGvrekQtDG8U+XhyoBqvXTIYoJowP679ru65h/X81WygHd4mavAAAAABJRU5ErkJggg==',
     text: 'js 一行代码',
     url: 'https://1loc.dev/'
   },
@@ -98,7 +97,7 @@ export default [
     url: 'https://caniuse.com/flexbox'
   },
   {
-    src: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/fbe27402-b82c-4e0b-b74b-309720a34d17.ico',
+    src: 'data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACEhIQAz8/PAO3t7QCXl5cAj4+PAI+PjwDm5ua6/f39/9bW1h28vLx2wsLCAKampgCmpqYAenp6AMfHxwDDw8MAhISEAM/PzwDt7e0AtLS0AJKSkgCJiYkA//////////////////////////+vr68Ar6+vAH9/fwDHx8cAw8PDAISEhADPz88A7e3tAO7u7gDb29sA3t7eJv//////////////////////////g4ODAHp6egCAgIAAx8fHAMPDwwCEhIQA0NDQAPX19WLg4OBIwMDAAM7Ozh/+/f7///////////////7//////9jY2ADZ2NkAdnZ2AMfHxwDDw8MAfn5+AP///////////////////v+QjpQN5+Lx/+vk9v/w6vj/8uv5/8fGxprr5vDS////////////////wcHBDmhoaAD///////////////////7/7ef3/8+38v/PvfL/1cTw/9rN7//YxfH/8On2//////////////////39/f/19fXk////////////////+fX8/+LW8P+5ifX/o1Dw/4Ye6/+WP+7/0b/x/+3l9v////////////////+3t7dA//////////////////////Dq9//XxvH/hRHx/zYEvv8uALn/hhTy/8698P/q4fX//////////////////////3R0dAD///////////35/v/l2/T/yrP1/14c0f8pB6z/Iwam/0wNw//Ls/H/5tzz//38/f///////////6ioqEt3d3cA0dHRALW1tQD28fY10b7x/9S98P+tc/T/jhvu/6BJ8f+GHPT/y7Lw/8it9P/HxsZ3+vr6xra2tiWNjY0AgICAAJqamgC6uroA/v7+//36/v/v5/b/283u/8u09f/Hrvb/1sbu/+jf8f/28Pv//v3+/29vbwCUlJQAjo6OAKGhoQChoaEA/v7+/v/////+/v7////+/+zn9f/h1PP/4tP0/+rj9f/8+/7////////////////+enp6AHp6egD7+/sA+/v7AP///////////////////////v7/8u37//Pw+////v3//////////////////v7+/8LCwgDCwsIAmpqaAJqamgD6+vrz/v7+/////////////////+jo6M3q6urC/////////////////v7+//////+kpKQApKSkAJiYmACYmJgAysrKAMTExJv///////////////+BgYEAiIiIAP///////////////9/f36qjo6MAb29vAG9vbwCYmJgAmJiYAM7OzgB4eHgAAAAAAAAAAAAAAAAAQEBAAE9PTwBwcHAAra2tGsrKygd2dnYAq6urAG9vbwBvb28A/P8AAPwfAAD8HwAA/B8AAIQBAACAAAAAAAEAAAAAAACAAQAA8AsAAOAHAADAAwAAwAMAAMADAADhhwAA//8AAA==',
     text: '中国色',
     url: 'http://zhongguose.com/'
   },
@@ -124,5 +123,16 @@ export default [
     src: 'https://any86.github.io/any-rule/favicon.ico',
     text: '正则大全',
     url: 'https://any86.github.io/any-rule/'
+  },
+  {
+    src: 'https://www.gstatic.cn/devrel-devsite/prod/vc1297c14e883386d1f62a6331e02f40717d89cc8c6640263fbfdb91f0f9a5401/tensorflow/images/favicon.png',
+    text: 'TensorFlow',
+    url: 'https://tensorflow.google.cn/?hl=zh-cn',
+    title: '使用 TensorFlow 创建生产级机器学习模型'
+  },
+  {
+    src: 'https://learnblockchain.cn/favicon.ico',
+    text: 'Web3.js',
+    url: 'https://learnblockchain.cn/docs/web3js-0.2x/#'
   }
 ]

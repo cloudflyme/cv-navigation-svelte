@@ -45,7 +45,7 @@ export default [
     url: 'https://www.uviewui.com/'
   },
   {
-    src: 'https://www.naiveui.com/assets/naivelogo.93278402.svg',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAAulBMVEUAAABfvCFfvCFfvCFiuiFZsR5gvCFhvSZIlxRYrh1jwSNZrR1evCBcuh9LmBZHmhRWuB0Y7ghgvSBluCNssyVdviFfvCNhvShivSNfvCFivyhjwiRduyBjxiZhuCFhvCJElRJJjRJZwCBgux5GmxReuyBDzRdguyBMnBZbvSNGlxRXsh1EzhdsvidfvCFMlxdiwiNevB5ntiNNlRdevSFYsR5KkxZJkhZLkRZKjxZhvyJYrh1dviBJmRbyYbrtAAAALnRSTlMA8O/7/vn3oHD7+PeuiGRKOTkb7unlxrWxsaObl46Ffnt4dGtramFbVEE8LSYZ/KDcqQAAAK1JREFUGNNV0FcSwjAMBNCFQAglhdB77yCb9AL3vxYeJ2Mm+7dv9CEJlRxGl0rfN0gD8HyV/UREOtD3Oo8CJm+iuuge794ltCQMvA8PE/sPjYB4M/laCmokIPJ9A5grCCPG2A4rUhOpgOhoZiVkSyMRknZ5CbTA1mcszgXUJEwBw2dxW0EPgFWApgDXNFcwk5vbISftJmEMGaejO4AuYIMirguIWwKz8qXzcF3pP+RHHB0EPeUeAAAAAElFTkSuQmCC',
     text: 'Naive UI',
     url: 'https://www.naiveui.com/zh-CN/light'
   },

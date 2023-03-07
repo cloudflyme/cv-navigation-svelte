@@ -22,7 +22,7 @@
     }
     confirmLoading = true
     ajaxPost(
-      'https://39734fbc-b241-4d89-ad87-0befd655e266.bspapp.com/setFeedbackInfo',
+      'https://fc-mp-b28966cb-26bc-43ae-b98b-aa286fad0729.next.bspapp.com/setFeedbackInfo',
       { type: listValue, desc: text, create_time: parseTime(+new Date()) }
     ).then(res => {
       if (res?.success == false) {
@@ -45,10 +45,7 @@
   }}
 >
   <span class="text">留言反馈</span>
-  <img
-    src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/6b91e726-c7f8-40b7-9736-c51304a44926.png"
-    alt=""
-  />
+  <img src="https://mp-b28966cb-26bc-43ae-b98b-aa286fad0729.cdn.bspapp.com/cloudstorage/0951cdf1-6f67-4735-8aff-b2774f78106b.png" alt="" />
 </div>
 <Model
   title="反馈"

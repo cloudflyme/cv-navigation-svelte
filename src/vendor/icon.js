@@ -1,4 +1,3 @@
-import _cdn  from "./cdn"
 export default [
   {
     src: 'https://img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico',
@@ -42,13 +41,13 @@ export default [
     title: 'emoji中文网'
   },
   {
-    src: 'https://v5.bootcss.com/docs/5.1/assets/img/favicons/favicon.ico',
+    src: 'https://icons.bootcss.com/assets/img/favicons/favicon.ico',
     text: 'bootstrap-icons',
     url: 'https://icons.bootcss.com/',
     title: 'Bootstrap 官方图标库'
   },
   {
-    src: _cdn + 'edff8684-32c4-4023-a632-4b8cfb65a5fe.svg',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAjVBMVEUAAAAwMDAvLy8wMDAtLS0yMjIvLy8yMjIxMTExMTEwMDAnJycoKCgbGxswMDA0NDQyMjIxMTE2NjYwMDAzMzMwMDAtLS0xMTEpKSkwMDAdHR0nJycwMDA1NTUfHx8yMjI9PT0xMTE8PDwrKysmJiY6OjoXFxcZGRkwMDBBQUEwMDAzMzM2NjYqKiotLS1A2t1UAAAAKnRSTlMA37HvqH/807iRZWVPHPLx4+Hf2srJv6ufmoeCd25gXFhUTExEPDQsIhc1lM3vAAAAfUlEQVQY063NRw6DQBBE0bJnhmicc86huvH9j8cGIQ1IbOAv36IKvTZaHppoKE10QYSWHrH7ApmLn7glSYlv4RSYkx+EZPWpkqbUFzDkoBrYKSl7+IiVMEIdrdDW8UIhrz5mKtsN85+HMwkA/S+ANU1pR5o7cJ7kJ9hxiM4VWvcKfokRwVwAAAAASUVORK5CYII=',
     text: 'xicons',
     url: 'https://www.xicons.org/#/zh-CN'
   },

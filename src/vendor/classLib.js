@@ -1,7 +1,6 @@
-import _cdn  from "./cdn"
 export default [
   {
-    src: _cdn + '1a45b478-83a3-4f8d-b04e-d038d01b0b32.png',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAAAOg80Og80Og80Og80Og80Og80Og80Og80Og80Ng83+//96u+Pw9/w4mdZdrN5OpNvi8Pkci9DPUFIgAAAACnRSTlMAgg5p79JArCOQIVC21wAAAJtJREFUOMvNk0EOhSAMRKVFQASL3v+w39hPGgUhrvStaGaSaWg7nAFEGBoY6701t7KbtN/Rk6vKgKP/MyooZcNytiBcw7U/oa0pwwVpRcKFIge53ChlJdHGD3UYFBdhXhd+LescqoaYDfFFQ6CDcGcQnhokItFOCvGz/0C1YfXGjf2FYZyqrZxynaVtr72B5uEgPD49aaUI753/D4cwGeO3K3hWAAAAAElFTkSuQmCC',
     text: 'axios',
     url: 'http://www.axios-js.com/',
     title: '易用、简洁且高效的http库'
@@ -23,28 +22,28 @@ export default [
     url: 'https://zeptojs.bootcss.com/#'
   },
   {
-    src: _cdn + 'ad061805-85ad-4c4a-bf3e-97310384f41b.ico',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAaVBMVEUAAAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAC/AAD2oEmJAAAAInRSTlMAmzUP+t+lCfbJaCDFrZKFVD8lBfG1iS8W9efg2Ly7fXNjGDhiAQAAAJVJREFUGNNVzzcSwzAMBdElxSAqWcE5+9//kDZFNX4VBsUOQNZOzdB5Y/lz6hQqivl4CCNLr1Q2o9PPI8abwlqotRpoJEvLTkUdz5Jhotdm5iLPB6PNmVqOgVFFYpYcKXIoCZtrHrNjOe6lzoLPUasGlna96CVZCOpPQDVFqn3IU5Ku6e5UP99NRd4EbUyksMY7t73/BepCDu3jUWD3AAAAAElFTkSuQmCC',
     text: 'jq22',
     url: 'https://www.jq22.com/'
   },
   {
-    src: _cdn + '08972837-21b6-41fa-b6c8-b09acfc36c12.png',
+    src: new URL('../assets/image/Moment.png', import.meta.url).href,
     text: 'Moment',
     url: 'http://momentjs.cn/'
   },
   {
-    src: 'https://v5.bootcss.com/docs/5.1/assets/img/favicons/favicon.ico',
+    src: 'https://icons.bootcss.com/assets/img/favicons/favicon.ico',
     text: 'bootstrap',
     url: 'https://v5.bootcss.com/'
   },
   {
-    src: _cdn + 'c02b71d8-d851-4649-b023-a095c172fa72.png',
+    src: new URL('../assets/image/swiper.png', import.meta.url).href,
     text: 'swiper',
     url: 'https://3.swiper.com.cn/',
     title: '开源、免费、强大的移动端触摸滑动插件'
   },
   {
-    src: _cdn + 'ec42ab2c-6526-4deb-b5d3-0894d2887fc0.png',
+    src: new URL('../assets/image/mockjs.png', import.meta.url).href,
     text: 'mockjs',
     url: 'http://mockjs.com/',
     title: '生成随机数据，拦截 Ajax 请求'
@@ -70,7 +69,7 @@ export default [
     url: 'https://pqina.nl/flip/#nutshell'
   },
   {
-    src: _cdn + '2a20ea40-eded-411d-a40d-ae45cd564f36.png',
+    src: new URL('../assets/image/notyf.png', import.meta.url).href,
     text: 'notyf',
     url: 'https://carlosroso.com/notyf/',
     title: '用于 toast 通知的简约 JavaScript 库。响应式，A11Y，无依赖。很小 (~3KB)'
@@ -91,7 +90,7 @@ export default [
     url: 'https://printjs.crabbly.com/'
   },
   {
-    src: _cdn + '66335525-89a1-4cd1-a5e0-035d6e4120c7.png',
+    src: new URL('../assets/image/formilyjs.png', import.meta.url).href,
     text: 'formilyjs',
     url: 'https://v2.formilyjs.org/zh-CN',
     title: '阿里巴巴统一前端表单解决方案'
@@ -109,7 +108,7 @@ export default [
     title: '查找并修复JavaScript代码中的问题'
   },
   {
-    src: 'http://mozilla.github.io/pdf.js/images/favicon.ico',
+    src: new URL('../assets/image/PDFjs.png', import.meta.url).href,
     text: 'PDFjs',
     url: 'http://mozilla.github.io/pdf.js/'
   },

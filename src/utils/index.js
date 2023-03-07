@@ -98,9 +98,9 @@ export function parseTime(time, cFormat) {
 export function simplifyNum(number) {
   if (!number && number != 0) return number
   if (number / 100000000 >= 1) {
-    return parseInt(number / 100000000) + '亿'
+    return parseInt(number / 100000000) + ' 亿'
   } else if (number / 10000 >= 1) {
-    return parseInt(number / 10000) + '万'
+    return parseInt(number / 10000) + ' 万'
   } else {
     return number
   }

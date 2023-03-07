@@ -25,7 +25,7 @@ export default [
     url: 'https://www.rollupjs.com/'
   },
   {
-    src: 'https://www.webpackjs.com/assets/favicon.ico',
+    src: 'https://www.webpackjs.com/icon_144x144.png',
     text: 'webpack',
     url: 'https://www.webpackjs.com/'
   },

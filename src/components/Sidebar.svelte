@@ -6,9 +6,7 @@
   import Hotlist from './Hotlist.svelte'
   import Switch from './Switch.svelte'
   import { parseTime, ajaxGet, jsonp, simplifyNum, ajaxPost } from '../utils'
-  // import md5 from '../utils/md5'
-  // @ts-ignore
-  import md5 from 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-39734fbc-b241-4d89-ad87-0befd655e266/5cb15a85-8e80-4d4f-80b1-4a8bc5a9567b.js'
+  import md5 from '../utils/md5'
   let szvisible = localStorage.getItem('szvisible')
     ? JSON.parse(localStorage.getItem('szvisible'))
     : true
@@ -69,20 +67,6 @@
         getCityWeater(cid)
       }, 1000 * 60 * 30)
     })
-    // const script = document.createElement('script')
-    // script.src = 'https://pv.sohu.com/cityjson?ie=utf-8'
-    // document.body.appendChild(script)
-
-    // script.onload = () => {
-    //   // @ts-ignore
-    //   const cid = returnCitySN.cid
-    //   getCityWeater(cid)
-    //   stopTime = setInterval(() => {
-    //     // @ts-ignore
-    //     getCityWeater(cid)
-    //   }, 1000 * 60 * 30)
-    //   document.body.removeChild(script)
-    // }
   }
   onMount(() => {
     getWeater()
@@ -164,29 +148,16 @@
   let loading3 = false
   function getzhihu() {
     loading3 = true
-    ajaxGet('https://tenapi.cn/zhihuresou/').then(res => {
-      zhihuList = res.list.slice(0, 10).map(item => {
+    ajaxGet('https://www.frontendjs.com/api/hot/zhihu').then(res => {
+      zhihuList = res.data.slice(0, 10).map(item => {
         return {
-          text: item.query + ' ',
-          url: item.url
+          text: item.text + ' ',
+          url: item.link,
+          hotNum: simplifyNum(item.hotValue)
         }
       })
       loading3 = false
     })
-    // ajaxGet('https://www.frontendjs.com/api/hot/zhihu').then(res => {
-    //   zhihuList = res.data.slice(0, 10).map(item => {
-    //     return {
-    //       text: item.text + ' ',
-    //       url: item.link,
-    //       hotNum:
-    //         item.hotValue > 10000
-    //           ? // @ts-ignore
-    //             parseInt(item.hotValue / 10000) + '万'
-    //           : item.hotValue
-    //     }
-    //   })
-    //   loading3 = false
-    // })
   }
   if (zhvisible) {
     getzhihu()
@@ -196,10 +167,10 @@
   let loading4 = false
   function getblList() {
     loading4 = true
-    ajaxGet('https://tenapi.cn/bilihot/').then(res => {
-      blList = res.list.slice(0, 10).map(item => {
+    ajaxGet('https://tenapi.cn/v2/bilihot/').then(res => {
+      blList = res.data.slice(0, 10).map(item => {
         return {
-          text: item.showname + ' ',
+          text: item.name + ' ',
           url: item.url
         }
       })

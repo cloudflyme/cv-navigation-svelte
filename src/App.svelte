@@ -75,7 +75,6 @@
         rel="noopener noreferrer">源码链接：代码写的不好，想了解的看看就行</a
       >
     </div>
-    <div class="block">Copyright © 2021-2022 5cv.top All Rights Reserved</div>
     <a
       class="block"
       href="https://beian.miit.gov.cn/"

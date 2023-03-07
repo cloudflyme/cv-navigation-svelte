@@ -1,4 +1,3 @@
-import _cdn  from "./cdn"
 export default [
   {
     src: 'https://cn.vuejs.org/logo.svg',
@@ -70,12 +69,12 @@ export default [
     title: '为企业级框架和应用而生'
   },
   {
-    src: _cdn + '916e2040-8b90-43e9-9a13-e5d13caca955.svg',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAZlBMVEUAAADm5ubp6enm5ubm5ubn5+fn5+fm5ubm5ubm5ubo6Ojn5+fm5ubm5ubm5ubm5ubn5+fm5ubn5+fm5ubn5+fm5ubm5ubo6Ojp6enm5ubl5eXm5ubm5ubn5+fm5ubn5+fn5+fm5uYpO5XIAAAAIXRSTlMA+QvNEt0p8NhiQcN7eNP06+C9t7KwZlFKHh0U8caBfSA1Ep9WAAAA0klEQVQoz4WS3bKCMBCDu4VSwBZFwX/P8Xv/l3SpOOgomosA2ZmQTWt+4VR1K1h1Vf4i23BmhA920g8ZZMh+Lwxvx4d+FVy94d+YPza1Qw6jTwZuJ6LuuciuhezuFnA6oimsLRpUbokpz5naRmGERFvjh2wVa+UFi3K5LPWhH2sq5Y6tsqMwigKnvKVXLpPkSZvl+DQulfmIuYF8s+o//3yKexniXp7inrwuGKYFw2NBraRt3it5L9GlEudrTzjOHJS6Rc8IH615Rn6/DL1ehh+4AebIG/AZyLvIAAAAAElFTkSuQmCC',
     text: 'koa',
     url: 'https://www.koajs.com.cn/'
   },
   {
-    src: _cdn + '3a4b29b5-8cf3-4752-b556-8de809d61f78.ico',
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABU1BMVEUAAABHg444d4FFgo0+gIlGhY9BfIZEgoxBfodKg49GhJFCg4xHhI5KhpM/gIk+e4VFgo5GhI1JhJA/folFgIpHhpJFhZFGgIpMipdIhY46foRGho9JhJNMiZZPiJNJhY9DfIdFhZBNjZhGg41IgI5Bg5BLhpE3f4Q4d4FDf4tBeoQ1eYFGgY1Hh5BGgpBOi5dJhI8ydn4/cX5MkZtPiZM5goxHg45RhJA2ZGxKjZk6a3NIhZA6a3JTiJZEgJBAeoVMj5tEjpVGg45Df4hEgIk+gotDf4Y9foVLi5RKe4o4gos9c35Egos9goxMhpNPk59Hi5Y6folSmaRNg4xDfo01dn5FgY5Jh5Q2eIBGf5BDh5A9e4RCdYJBfIooeok3anFWnao0YWpMiZghPkM6en4UVVo9g4dCf444dXkvYFxRjZlAgY8aZmoYLTFEhY1KiJRHg48cJcIYAAAAb3RSTlMApAWbL7S0ramoiYdeST4V7dbQzMG+trSzsKKYloSCe3ZybmphVlJEOSogGQsE+Ofm3t7d2MnIxsbFxMLBwLu7urq6uLaxsa+uq6OioZ6ZlZCPjo2Hh4F1aGdlY2JZV1JRT0NAPDw5NColJBwVExHoZehoAAAA/klEQVQY02XN1XLDMBRF0e3YYeakYcYyMzMzM2P6/0+1nHo6TdaMpHPugy66D0miTWLIN0mriln22f5NOpvHe/U3spmNpgtQ0sbVdDSJYJheKirK+2V0TnaZ84WQyQBkJ4C6xZ9Ry0YKhrNA7ABOPfsIOQvYt9SQn8LuKaNxLsPiufgzJXm/gMcHUCKUBwyoXN8IjQa8Wmu9Dq1ZrdvicajtRXorIBTXWOlzo7kL02QfhN3uEy2fWeDmUw0d4SRU/DO3ItvIBNfVEDCFcLs4DswnSofO566FUaAUr1HveYLrHVmSjUd79/zK9Yt709lcqIuMVasjs7SIBcfjev4B4XwduCpD/JcAAAAASUVORK5CYII=',
     text: 'electron',
     url: 'http://www.electronjs.org/',
     title: '使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序'
@@ -92,9 +91,9 @@ export default [
     url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
   },
   {
-    src: 'https://taro-docs.jd.com/taro/img/favicon.ico',
+    src: 'https://cdn.docschina.org/home/logo/taro.png',
     text: 'Taro',
-    url: 'http://taro-docs.jd.com/taro/docs/README',
+    url: 'https://taro-docs.jd.com/docs',
     title: '一个开放式跨端跨框架解决方案'
   },
   {
@@ -132,5 +131,10 @@ export default [
     text: 'lit',
     url: 'https://lit.dev/',
     title: '简单的、快速地、网络组件。'
+  },
+  {
+    src: 'https://docs.nestjs.com/favicon.ico',
+    text: 'nestjs',
+    url: 'https://docs.nestjs.com/'
   }
 ]

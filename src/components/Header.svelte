@@ -107,9 +107,9 @@
         bcImgSrc = res.data.url
         setLocal('bingImg', res.data.url)
       })
-      ajaxGet(
-        'https://39734fbc-b241-4d89-ad87-0befd655e266.bspapp.com/setAccessRecord'
-      )
+      // ajaxGet(
+      //   'https://fc-mp-b28966cb-26bc-43ae-b98b-aa286fad0729.next.bspapp.com/setAccessRecord'
+      // )
     }
     inputDom.addEventListener('compositionstart', () => {
       inputZh = true
